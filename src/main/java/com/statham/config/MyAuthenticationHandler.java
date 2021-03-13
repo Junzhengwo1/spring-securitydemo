@@ -14,6 +14,7 @@ import java.io.IOException;
 /**
  * @author JIAJUN KOU
  */
+
 public class MyAuthenticationHandler implements AuthenticationSuccessHandler, AuthenticationFailureHandler {
 
     private String url;

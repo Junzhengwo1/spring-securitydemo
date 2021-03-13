@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span sec:authentication="name"></span><br/>
+<span sec:authentication="principal.username"></span><br/>
+<span sec:authentication="credentials"> </span><br/>
+<span sec:authentication="authorities"> </span><br/>
+<span sec:authentication="details.remoteAddress"> </span><br/>
+<span sec:authentication="details.sessionId"> </span><br/>
+
+
+</body>
+</html>

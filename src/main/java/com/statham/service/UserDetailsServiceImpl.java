@@ -33,6 +33,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         //2.存在用户的话，将密码解析（这个密码应该是用户注册时加过密的密码）
         String password = pw.encode("123");
 
-        return new User(username,password, AuthorityUtils.commaSeparatedStringToAuthorityList("admin,normal"));
+        return new User(username,password, AuthorityUtils.commaSeparatedStringToAuthorityList("admin,normal,ROLE_abc,/main.html"));
     }
 }
